@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA3C241C29556CA200D88508 /* OWLYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C241B29556CA200D88508 /* OWLYApp.swift */; };
+		FA3C241E29556CA200D88508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C241D29556CA200D88508 /* ContentView.swift */; };
+		FA3C242029556CA400D88508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3C241F29556CA400D88508 /* Assets.xcassets */; };
+		FA3C242329556CA400D88508 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3C242229556CA400D88508 /* Preview Assets.xcassets */; };
+		FA3C242D29556CA400D88508 /* OWLYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C242C29556CA400D88508 /* OWLYTests.swift */; };
+		FA3C243729556CA400D88508 /* OWLYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C243629556CA400D88508 /* OWLYUITests.swift */; };
+		FA3C243929556CA400D88508 /* OWLYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C243829556CA400D88508 /* OWLYUITestsLaunchTests.swift */; };
+		FA3C244A2956BE9500D88508 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C24492956BE9500D88508 /* Product.swift */; };
+		FA3C244D2956D33300D88508 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C244C2956D33300D88508 /* ProductCard.swift */; };
+		FA3C2450295702CF00D88508 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C244F295702CF00D88508 /* SideMenuView.swift */; };
+		FA3C2452295702F900D88508 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2451295702F900D88508 /* SideMenuOptionView.swift */; };
+		FA3C24542957032D00D88508 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C24532957032D00D88508 /* SideMenuViewModel.swift */; };
+		FA3C245829590BE800D88508 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C245729590BE800D88508 /* ProductView.swift */; };
+		FAD32C6C29636DF100C2BEF0 /* PinterestGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C6B29636DF100C2BEF0 /* PinterestGrid.swift */; };
+		FAD32C6E2963A99100C2BEF0 /* SellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C6D2963A99100C2BEF0 /* SellView.swift */; };
+		FAD32C702963AABA00C2BEF0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C6F2963AABA00C2BEF0 /* ProfileView.swift */; };
+		FAD32C722963AB2500C2BEF0 /* AllBidsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */; };
+		FAD32C742966738700C2BEF0 /* AllBidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C732966738700C2BEF0 /* AllBidsModel.swift */; };
+		FAD32C762966BC2F00C2BEF0 /* SellProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA3C242929556CA400D88508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3C241029556CA200D88508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3C241729556CA200D88508;
+			remoteInfo = OWLY;
+		};
+		FA3C243329556CA400D88508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3C241029556CA200D88508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3C241729556CA200D88508;
+			remoteInfo = OWLY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA3C241829556CA200D88508 /* OWLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3C241B29556CA200D88508 /* OWLYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWLYApp.swift; sourceTree = "<group>"; };
+		FA3C241D29556CA200D88508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA3C241F29556CA400D88508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3C242229556CA400D88508 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA3C242829556CA400D88508 /* OWLYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWLYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3C242C29556CA400D88508 /* OWLYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWLYTests.swift; sourceTree = "<group>"; };
+		FA3C243229556CA400D88508 /* OWLYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWLYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3C243629556CA400D88508 /* OWLYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWLYUITests.swift; sourceTree = "<group>"; };
+		FA3C243829556CA400D88508 /* OWLYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWLYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA3C24492956BE9500D88508 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA3C244C2956D33300D88508 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		FA3C244F295702CF00D88508 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		FA3C2451295702F900D88508 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
+		FA3C24532957032D00D88508 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		FA3C245729590BE800D88508 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		FAD32C6B29636DF100C2BEF0 /* PinterestGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestGrid.swift; sourceTree = "<group>"; };
+		FAD32C6D2963A99100C2BEF0 /* SellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellView.swift; sourceTree = "<group>"; };
+		FAD32C6F2963AABA00C2BEF0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBidsView.swift; sourceTree = "<group>"; };
+		FAD32C732966738700C2BEF0 /* AllBidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBidsModel.swift; sourceTree = "<group>"; };
+		FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3C241529556CA200D88508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C242529556CA400D88508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C242F29556CA400D88508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA3C240F29556CA200D88508 = {
+			isa = PBXGroup;
+			children = (
+				FA3C241A29556CA200D88508 /* OWLY */,
+				FA3C242B29556CA400D88508 /* OWLYTests */,
+				FA3C243529556CA400D88508 /* OWLYUITests */,
+				FA3C241929556CA200D88508 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3C241929556CA200D88508 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C241829556CA200D88508 /* OWLY.app */,
+				FA3C242829556CA400D88508 /* OWLYTests.xctest */,
+				FA3C243229556CA400D88508 /* OWLYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3C241A29556CA200D88508 /* OWLY */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C241B29556CA200D88508 /* OWLYApp.swift */,
+				FA3C244E2956DE6100D88508 /* Views  */,
+				FA3C244B2956D30F00D88508 /* Components */,
+				FA3C24462956BE2000D88508 /* Models */,
+				FA3C241F29556CA400D88508 /* Assets.xcassets */,
+				FA3C242129556CA400D88508 /* Preview Content */,
+			);
+			path = OWLY;
+			sourceTree = "<group>";
+		};
+		FA3C242129556CA400D88508 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C242229556CA400D88508 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA3C242B29556CA400D88508 /* OWLYTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C242C29556CA400D88508 /* OWLYTests.swift */,
+			);
+			path = OWLYTests;
+			sourceTree = "<group>";
+		};
+		FA3C243529556CA400D88508 /* OWLYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C243629556CA400D88508 /* OWLYUITests.swift */,
+				FA3C243829556CA400D88508 /* OWLYUITestsLaunchTests.swift */,
+			);
+			path = OWLYUITests;
+			sourceTree = "<group>";
+		};
+		FA3C24462956BE2000D88508 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C24492956BE9500D88508 /* Product.swift */,
+				FA3C24532957032D00D88508 /* SideMenuViewModel.swift */,
+				FAD32C732966738700C2BEF0 /* AllBidsModel.swift */,
+				FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA3C244B2956D30F00D88508 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C244C2956D33300D88508 /* ProductCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA3C244E2956DE6100D88508 /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C241D29556CA200D88508 /* ContentView.swift */,
+				FA3C244F295702CF00D88508 /* SideMenuView.swift */,
+				FA3C2451295702F900D88508 /* SideMenuOptionView.swift */,
+				FA3C245729590BE800D88508 /* ProductView.swift */,
+				FAD32C6B29636DF100C2BEF0 /* PinterestGrid.swift */,
+				FAD32C6D2963A99100C2BEF0 /* SellView.swift */,
+				FAD32C6F2963AABA00C2BEF0 /* ProfileView.swift */,
+				FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */,
+			);
+			path = "Views ";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3C241729556CA200D88508 /* OWLY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3C243C29556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLY" */;
+			buildPhases = (
+				FA3C241429556CA200D88508 /* Sources */,
+				FA3C241529556CA200D88508 /* Frameworks */,
+				FA3C241629556CA200D88508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWLY;
+			productName = OWLY;
+			productReference = FA3C241829556CA200D88508 /* OWLY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA3C242729556CA400D88508 /* OWLYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3C243F29556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLYTests" */;
+			buildPhases = (
+				FA3C242429556CA400D88508 /* Sources */,
+				FA3C242529556CA400D88508 /* Frameworks */,
+				FA3C242629556CA400D88508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3C242A29556CA400D88508 /* PBXTargetDependency */,
+			);
+			name = OWLYTests;
+			productName = OWLYTests;
+			productReference = FA3C242829556CA400D88508 /* OWLYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA3C243129556CA400D88508 /* OWLYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3C244229556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLYUITests" */;
+			buildPhases = (
+				FA3C242E29556CA400D88508 /* Sources */,
+				FA3C242F29556CA400D88508 /* Frameworks */,
+				FA3C243029556CA400D88508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3C243429556CA400D88508 /* PBXTargetDependency */,
+			);
+			name = OWLYUITests;
+			productName = OWLYUITests;
+			productReference = FA3C243229556CA400D88508 /* OWLYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3C241029556CA200D88508 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FA3C241729556CA200D88508 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FA3C242729556CA400D88508 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FA3C241729556CA200D88508;
+					};
+					FA3C243129556CA400D88508 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FA3C241729556CA200D88508;
+					};
+				};
+			};
+			buildConfigurationList = FA3C241329556CA200D88508 /* Build configuration list for PBXProject "OWLY" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3C240F29556CA200D88508;
+			productRefGroup = FA3C241929556CA200D88508 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3C241729556CA200D88508 /* OWLY */,
+				FA3C242729556CA400D88508 /* OWLYTests */,
+				FA3C243129556CA400D88508 /* OWLYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3C241629556CA200D88508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3C242329556CA400D88508 /* Preview Assets.xcassets in Resources */,
+				FA3C242029556CA400D88508 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C242629556CA400D88508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C243029556CA400D88508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3C241429556CA200D88508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD32C6C29636DF100C2BEF0 /* PinterestGrid.swift in Sources */,
+				FA3C241E29556CA200D88508 /* ContentView.swift in Sources */,
+				FAD32C722963AB2500C2BEF0 /* AllBidsView.swift in Sources */,
+				FA3C245829590BE800D88508 /* ProductView.swift in Sources */,
+				FA3C241C29556CA200D88508 /* OWLYApp.swift in Sources */,
+				FA3C2450295702CF00D88508 /* SideMenuView.swift in Sources */,
+				FA3C24542957032D00D88508 /* SideMenuViewModel.swift in Sources */,
+				FAD32C6E2963A99100C2BEF0 /* SellView.swift in Sources */,
+				FA3C244A2956BE9500D88508 /* Product.swift in Sources */,
+				FA3C244D2956D33300D88508 /* ProductCard.swift in Sources */,
+				FAD32C702963AABA00C2BEF0 /* ProfileView.swift in Sources */,
+				FA3C2452295702F900D88508 /* SideMenuOptionView.swift in Sources */,
+				FAD32C762966BC2F00C2BEF0 /* SellProductModel.swift in Sources */,
+				FAD32C742966738700C2BEF0 /* AllBidsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C242429556CA400D88508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3C242D29556CA400D88508 /* OWLYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3C242E29556CA400D88508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3C243729556CA400D88508 /* OWLYUITests.swift in Sources */,
+				FA3C243929556CA400D88508 /* OWLYUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA3C242A29556CA400D88508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3C241729556CA200D88508 /* OWLY */;
+			targetProxy = FA3C242929556CA400D88508 /* PBXContainerItemProxy */;
+		};
+		FA3C243429556CA400D88508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3C241729556CA200D88508 /* OWLY */;
+			targetProxy = FA3C243329556CA400D88508 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA3C243A29556CA400D88508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA3C243B29556CA400D88508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA3C243D29556CA400D88508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OWLY/Preview Content\"";
+				DEVELOPMENT_TEAM = N89FPHV2L7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA3C243E29556CA400D88508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OWLY/Preview Content\"";
+				DEVELOPMENT_TEAM = N89FPHV2L7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA3C244029556CA400D88508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWLY.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWLY";
+			};
+			name = Debug;
+		};
+		FA3C244129556CA400D88508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWLY.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWLY";
+			};
+			name = Release;
+		};
+		FA3C244329556CA400D88508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OWLY;
+			};
+			name = Debug;
+		};
+		FA3C244429556CA400D88508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owly.OWLYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OWLY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3C241329556CA200D88508 /* Build configuration list for PBXProject "OWLY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3C243A29556CA400D88508 /* Debug */,
+				FA3C243B29556CA400D88508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3C243C29556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3C243D29556CA400D88508 /* Debug */,
+				FA3C243E29556CA400D88508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3C243F29556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3C244029556CA400D88508 /* Debug */,
+				FA3C244129556CA400D88508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3C244229556CA400D88508 /* Build configuration list for PBXNativeTarget "OWLYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3C244329556CA400D88508 /* Debug */,
+				FA3C244429556CA400D88508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3C241029556CA200D88508 /* Project object */;
+}
