@@ -144,6 +144,7 @@ struct ProductView: View {
                         )
                 }.padding(.leading).padding(.trailing)
             }
+            .padding(.bottom)
         }
         .ignoresSafeArea()
     }
@@ -151,6 +152,6 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView(product: productList[1])
+        ProductView(product: productList[7])
     }
 }

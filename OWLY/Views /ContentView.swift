@@ -11,20 +11,21 @@ struct ContentView: View {
     @State private var searchText = ""
     
     var body: some View {
-        let columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+        let columns = [GridItem(.adaptive(minimum: 200), spacing: 20)]
         NavigationView {
-            
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns) {
                     ForEach(productList, id: \.id) { product in
                         ProductCard(product: product)
                     }
                 }
-                .padding()
+                .padding(.bottom)
             }
             .searchable(text: $searchText, prompt: "Search Brandeis")
-
             .navigationBarTitleDisplayMode(.inline)
+            
+            
+            //contains both top and bottom toolbar navigation
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack {
@@ -49,7 +50,7 @@ struct ContentView: View {
                 
                 ToolbarItem(placement: .bottomBar) {
                     HStack (spacing: 80){
-                        NavigationLink{ AllBidsView()} label: {
+                        NavigationLink{AllBidsView()} label: {
                             VStack {
                                 Image(systemName: "cart")
                                     .font(.system(size: 20))
@@ -68,7 +69,7 @@ struct ContentView: View {
                             }
                         }
                         
-                        NavigationLink{ ProfileView() } label: {
+                        NavigationLink{ProfileView()} label: {
                             VStack {
                                 Image(systemName: "person.crop.circle")
                                     .font(.system(size: 20))
@@ -80,12 +81,6 @@ struct ContentView: View {
                 }
 
             }
-            .toolbarBackground(.blue, for: .bottomBar)
-            .toolbarBackground(.visible, for: .bottomBar)
-//  toolbar background color
-
-
-            
             .navigationViewStyle(StackNavigationViewStyle())
         }
     }
