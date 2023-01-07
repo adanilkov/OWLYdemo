@@ -16,6 +16,9 @@ struct Product: Identifiable {
     var buyoutPrice: Float
     var timeRemaining: Int //time remaining in hours
     //add description and condition of item/product
+    //add tags
+    //add startingPrice
+    //add 
 }
 
 //hardcoded products, upon introduction of servers these will be called back via api
@@ -28,3 +31,4 @@ var productList = [Product(name: "Aeropress Coffee Kit", image: "coffee1", bidPr
                    Product(name: "String/Fairy Lights", image: "stringlights1", bidPrice: 23.00, buyoutPrice: 25.00, timeRemaining: 2),
                    Product(name: "Metal Water Bottle", image: "waterbottle1", bidPrice: 5.00, buyoutPrice: 15.00, timeRemaining: 27),
                    Product(name: "Pink Vans (Lightly Used)", image: "shoes1", bidPrice: 25.00, buyoutPrice: 70.00, timeRemaining: 36)]
+

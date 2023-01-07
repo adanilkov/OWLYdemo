@@ -26,6 +26,9 @@
 		FAD32C722963AB2500C2BEF0 /* AllBidsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */; };
 		FAD32C742966738700C2BEF0 /* AllBidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C732966738700C2BEF0 /* AllBidsModel.swift */; };
 		FAD32C762966BC2F00C2BEF0 /* SellProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */; };
+		FAD32C7A2967DFEF00C2BEF0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C792967DFEF00C2BEF0 /* ImagePicker.swift */; };
+		FAD32C7E29693CBB00C2BEF0 /* ProductTagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C7D29693CBB00C2BEF0 /* ProductTagComponent.swift */; };
+		FAD32C8029693D7300C2BEF0 /* ProductTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD32C7F29693D7300C2BEF0 /* ProductTags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBidsView.swift; sourceTree = "<group>"; };
 		FAD32C732966738700C2BEF0 /* AllBidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBidsModel.swift; sourceTree = "<group>"; };
 		FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductModel.swift; sourceTree = "<group>"; };
+		FAD32C792967DFEF00C2BEF0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FAD32C7D29693CBB00C2BEF0 /* ProductTagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTagComponent.swift; sourceTree = "<group>"; };
+		FAD32C7F29693D7300C2BEF0 /* ProductTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,9 +163,11 @@
 			isa = PBXGroup;
 			children = (
 				FA3C24492956BE9500D88508 /* Product.swift */,
+				FAD32C7F29693D7300C2BEF0 /* ProductTags.swift */,
 				FA3C24532957032D00D88508 /* SideMenuViewModel.swift */,
 				FAD32C732966738700C2BEF0 /* AllBidsModel.swift */,
 				FAD32C752966BC2F00C2BEF0 /* SellProductModel.swift */,
+				FAD32C792967DFEF00C2BEF0 /* ImagePicker.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3C244C2956D33300D88508 /* ProductCard.swift */,
+				FAD32C7D29693CBB00C2BEF0 /* ProductTagComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -179,10 +188,10 @@
 				FA3C244F295702CF00D88508 /* SideMenuView.swift */,
 				FA3C2451295702F900D88508 /* SideMenuOptionView.swift */,
 				FA3C245729590BE800D88508 /* ProductView.swift */,
-				FAD32C6B29636DF100C2BEF0 /* PinterestGrid.swift */,
 				FAD32C6D2963A99100C2BEF0 /* SellView.swift */,
 				FAD32C6F2963AABA00C2BEF0 /* ProfileView.swift */,
 				FAD32C712963AB2500C2BEF0 /* AllBidsView.swift */,
+				FAD32C6B29636DF100C2BEF0 /* PinterestGrid.swift */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 			files = (
 				FAD32C6C29636DF100C2BEF0 /* PinterestGrid.swift in Sources */,
 				FA3C241E29556CA200D88508 /* ContentView.swift in Sources */,
+				FAD32C8029693D7300C2BEF0 /* ProductTags.swift in Sources */,
 				FAD32C722963AB2500C2BEF0 /* AllBidsView.swift in Sources */,
 				FA3C245829590BE800D88508 /* ProductView.swift in Sources */,
 				FA3C241C29556CA200D88508 /* OWLYApp.swift in Sources */,
@@ -329,6 +339,8 @@
 				FA3C244D2956D33300D88508 /* ProductCard.swift in Sources */,
 				FAD32C702963AABA00C2BEF0 /* ProfileView.swift in Sources */,
 				FA3C2452295702F900D88508 /* SideMenuOptionView.swift in Sources */,
+				FAD32C7E29693CBB00C2BEF0 /* ProductTagComponent.swift in Sources */,
+				FAD32C7A2967DFEF00C2BEF0 /* ImagePicker.swift in Sources */,
 				FAD32C762966BC2F00C2BEF0 /* SellProductModel.swift in Sources */,
 				FAD32C742966738700C2BEF0 /* AllBidsModel.swift in Sources */,
 			);

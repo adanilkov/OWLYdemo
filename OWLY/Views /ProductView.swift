@@ -53,7 +53,7 @@ struct ProductView: View {
             .padding(.leading, 25)
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Rectangle().frame(width:330, height: 1).foregroundColor(.gray)
+            Rectangle().frame(width:300, height: 1).foregroundColor(.gray)
             
             HStack(spacing: 20) {
                 VStack(alignment: .leading) {
@@ -74,14 +74,14 @@ struct ProductView: View {
                         .fontWeight(.light)
                 }
                 
-                VStack(alignment: .leading) {
-                    Text("Starting Bid")
-                        .font(.caption2)
-                        .fontWeight(.ultraLight)
-                    
-                    Text("10.00 USD")
-                        .fontWeight(.light)
-                }
+//                VStack(alignment: .leading) {
+//                    Text("Starting Bid")
+//                        .font(.caption2)
+//                        .fontWeight(.ultraLight)
+//
+//                    Text("10.00 USD")
+//                        .fontWeight(.light)
+//                }
                 
                 VStack(alignment: .leading) {
                     Text("Buyout")
@@ -92,7 +92,7 @@ struct ProductView: View {
                         .fontWeight(.light)
                 }
             }.frame(maxHeight: .infinity, alignment: .bottom)
-            Rectangle().frame(width:330, height: 1).padding(5).foregroundColor(.gray)
+            Rectangle().frame(width:300, height: 1).padding(5).foregroundColor(.gray)
             
             VStack(alignment: .leading) {
                 Text("Bidders")
@@ -152,6 +152,6 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView(product: productList[7])
+        ProductView(product: productList[2])
     }
 }

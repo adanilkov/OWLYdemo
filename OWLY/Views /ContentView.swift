@@ -27,6 +27,7 @@ struct ContentView: View {
             
             //contains both top and bottom toolbar navigation
             .toolbar {
+            
                 ToolbarItem(placement: .principal) {
                     HStack {
                         Text("Home")
@@ -84,12 +85,15 @@ struct ContentView: View {
             .navigationViewStyle(StackNavigationViewStyle())
         }
     }
+    
 }
 
 func menuButtonAction() {
     
 }
-
+struct bottomBar {
+    
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

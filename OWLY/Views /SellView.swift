@@ -8,11 +8,52 @@
 import SwiftUI
 
 struct SellView: View {
+    @State private var image = UIImage()
+    @State private var showSheet = false
+    
+
+    
     var body: some View {
-        Text("Sell an Item!")
-        //add images
-        //category / tag --> determine what input fields are necessary
-        //ie. clothes need size, food needs expiration date
+        ScrollView(showsIndicators: false) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(Color.black, style: StrokeStyle(lineWidth: 1, dash: [5]))
+                    .frame(width: UIScreen.screenWidth - 10, height: 190)
+                    .offset(y:20)
+                Image(systemName: "photo.on.rectangle")
+                    .font(.system(size:60))
+                    .fontWeight(.light)
+                RoundedRectangle(cornerRadius: 7)
+                    .stroke(Color.black, lineWidth: 3)
+                    .frame(width: 100, height: 100)
+                Text("Add Product Photos")
+                    .offset(y: 80)
+            }.onTapGesture {
+                showSheet = true
+            }
+            .sheet(isPresented: $showSheet) {
+                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+            }
+            
+            
+            VStack (alignment: .leading){
+                Text("Add Tags")
+                    .padding(.top)
+                    .fontWeight(.semibold)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack() {
+                        ForEach(presetTags) { tag in
+                            ProductTagComponent(tag: tag)
+                        }
+                    }
+                    .padding(2)
+                }
+            }
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+        }
     }
 }
 
